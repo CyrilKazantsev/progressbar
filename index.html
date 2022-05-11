@@ -62,13 +62,8 @@
             }, time)
             }
             for (let i = 0; i < data.length; i++) {
-                if (i == 0) {
-                frameTime(data[i]*1000)
-                delay += data[i]*1000
-                } else {
                 frameTime(data[i]*1000 + delay)
                 delay += data[i]*1000
-                }
             }
         }
         dataForm.addEventListener("submit", move)
